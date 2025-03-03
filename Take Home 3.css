@@ -1,0 +1,386 @@
+/* Set up the data for the page and the colors/fonts used */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    --bg-primary: rgb(218, 173, 133);
+    --bg-secondary: rgb(117, 164, 170);
+    --font-color-primary: rgb(171, 114, 29);
+    --font-color-secondary: rgb(180, 82, 215);
+    --font-color-experiences: rgb(218, 149, 22);
+    --backup-color: rgb(69, 59, 142);
+}
+body {
+    height: 100vh;
+}
+/* Setting the data for the introduction area, including the background image and the dimensions of the foreground image */
+.introduction {
+    background-image: url("yellowstone-lake.jpg");
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.introduction img{
+    width: 72px;
+    height: 72px;
+}
+.introduction h1{
+    font-weight: 700px;
+    font-size: 72px;
+    display: flex;
+    color: var(--font-color-primary);
+    font-family: "Poppins";
+}
+.introduction i{
+    font-size: 72px;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+}
+.subtitle{
+    font-size: 48px;
+    color: var(--font-color-primary);
+    font-family: "Poppins";
+}
+/* Setting up the data for the preface, including background dimensions and positioning */
+.preface{
+    background-image: url("pexels-darrell-gough-217632-1696474.jpg");
+    background-size: 1600px 900px;
+    padding: 25px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    color: var(--font-color-primary);
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0 50px;
+    font-family: "Poppins";
+}
+.info h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--font-color-primary);
+    font-family: "Poppins";
+}
+.info p{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: "Poppins";
+    color: black;
+}
+/* Button data, including interaction when hovered over like the porfolio project */
+.preface .learn-btn {
+    position: absolute;
+    top: 1200px;
+    right: 200px;
+    background-color: var(--backup-color);
+    color: var(--font-color-primary);
+    padding: 6px 30px;
+    text-align: center;
+    width: 180px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+.preface .learn-btn:hover {
+    background-color: var(--bg-secondary);
+    color: var(--bg-primary);
+}
+/* Setting up the foundations and background image for the experiences section */
+.experiences {
+    background-image: url("pexels-robert-schrader-971509-21560094.jpg");
+    display: flex;
+    height: 640px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+/* Setting the position for the top text */
+.experiences h2{
+    color: var(--font-color-primary);
+    position: absolute;
+    top: 1300px;
+    padding: 0 50px;
+    text-align: center;
+    font-family: "Poppins";
+}
+/* Setting the data for the arrows and the size of images within the section */
+.experiences i{
+    font-size: 72px;
+    cursor: pointer;
+}
+.experiences img{
+    height: 400px;
+    width: 400px; 
+}
+/* Yellowstone, Cody and Teton's text positions are established here, alongside data about the text themselves*/
+.yellowstone{
+    position: absolute;
+    color: var(--font-color-experiences);
+    top: 1400px;
+    left: 100px;
+    font-size: 32px;
+    font-family: "Poppins";
+}
+.cody {
+    position: absolute;
+    color: var(--font-color-experiences);
+    top: 1400px;
+    font-size: 32px;
+    font-family: "Poppins";
+}
+.teton {
+    position: absolute;
+    color: var(--font-color-experiences);
+    top: 1400px;
+    right: 100px;
+    font-size: 32px;
+    font-family: "Poppins";
+}
+/* The arrows within the section are positioned here */
+.yellowstone-arrow{
+    position: absolute;
+    size: 160px;
+    top: 1700px;
+    left: 250px;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+}
+.cody-arrow {
+    position: absolute;
+    size: 160px;
+    top: 1700px;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+}
+.teton-arrow {
+    position: absolute;
+    size: 160px;
+    top: 1700px;
+    right: 250px;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+}
+/* Button data, including interaction when hovered over like the porfolio project */
+.experiences .explore-btn{
+    position: absolute;
+    top: 1850px;
+    background-color: var(--backup-color);
+    color: var(--font-color-primary);
+    padding: 6px 30px;
+    text-align: center;
+    width: 180px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+/* Setting the background image for the travel tips section */
+.travel-tips{
+    background-image: url("pexels-pixabay-314860.jpg");
+    height: 480px;
+}
+/* Setting the text data and positioning within the travel tips section */
+.travel-tips h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0 50px;
+    font-size: 72px;
+    word-wrap: break-word;
+    font-family: "Poppins";
+    color: var(--font-color-primary);
+}
+.travel-tips p{
+    gap: 80px;
+    padding: 0 50px;
+    text-align: right;
+    font-size: 20px;
+    font-family: "Poppins";
+    color: var(--font-color-secondary);
+}
+.travel-tips h2{
+    gap: 80px;
+    padding: 0 50px;
+    text-align: right;
+    font-size: 32px;
+    font-family: "Poppins";
+    color: var(--font-color-primary);
+}
+/* Button data, including interaction when hovered over like the porfolio project */
+.travel-tips .learn-btn {
+    margin-right: 25%;
+    float: right;
+    background-color: var(--backup-color);
+    color: var(--font-color-primary);
+    padding: 6px 30px;
+    text-align: center;
+    width: 180px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.travel-tips .learn-btn:hover {
+    background-color: var(--bg-secondary);
+    color: var(--bg-primary);
+}
+/* Establshing the background info and images for the number section */
+.numbers {
+    height: 400px;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 24px;
+    background-image: url("pexels-wired_optics-295717162-13260643.jpg");
+}
+/* Setting data, including the border data, for the stats */
+.numbers .stats {
+    text-align: center;
+    margin-top: 40px;
+    background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    line-height: 50px;
+    border-radius: 100%;
+    border-radius: 100px;
+    padding: 0 50px;
+    border: 1px solid transparent;
+}
+/* Setting the text details about the stats here */
+.numbers .stats h3{
+    font-size: 40px;
+    font-family: "Poppins";
+    color: var(--font-color-primary);
+}
+.numbers .stats p{
+    font-size: 28px;
+    font-family: "Poppins";
+    color: var(--font-color-primary);
+}
+/* Setting the foundations and alignment for the text and background for the review section */
+.review{
+    text-align: center;
+    height: 480px;
+    background-image: url("pexels-michelle-chadwick-2149425616-30982185.jpg");
+}
+.review p{
+    font-family: "Poppins";
+    color: var(--font-color-primary);
+}
+.review h2 {
+    font-family: "Poppins";
+    color: var(--font-color-primary);
+}
+/* Sets the foreground image data */
+.review img{
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    border-radius: 65%;
+}
+.review i{
+    font-size: 72px;
+    cursor: pointer;
+    color: var(--font-color-secondary);
+}
+/* Setting up the height, width and positions of the horizontally aligned images */
+.images{
+    height: 375px;
+} 
+.images img{
+    height: 375px;
+    width: 379.8px; 
+    float: left;
+}
+/* Data and positions for the arrows */
+.images-arrow-left{
+    position: absolute;
+    top: 3400px;
+    font-size: 160px;
+    left: 0px;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+}
+.images-arrow-right {
+    position: absolute;
+    top: 3400px;
+    font-size: 160px;
+    right: 0px;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+}
+/* Setting the foundations for the background and content of contact */
+.contact{
+    background-image: url("pexels-zetong-li-880728-9717547.jpg");
+    margin-top: auto;
+    height: 300px;
+    justify-content: space-around;
+}
+.contact h1{
+    font-size: 48px;
+    color: var(--font-color-primary);
+    font-family: "Poppins";
+}
+.contact p{
+    color: var(--font-color-primary);
+    font-family: "Poppins";
+}
+/* The social-media section sets up the positions, layout and details about the social links */
+.contact .social-media{
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-around;
+    color: var(--font-color-secondary);
+    font-family: "Poppins";
+}
+.contact .social-media .item{
+    display: inline-block;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    font-size: 36px;
+    flex-basis: 100%;
+    cursor: pointer;
+}
+/* Setting up the position for the user input section */
+.contact .user-input{
+    display: block;
+    align-items: right;
+    text-align: right;
+    padding: 50px 50px;
+    box-sizing: border-box;
+}
+/* Button data, including interaction when hovered over like the porfolio project */
+.contact .user-input .submit-btn{
+    float: right;
+    background-color: var(--backup-color);
+    color: var(--font-color-primary);
+    padding: 6px 30px;
+    text-align: center;
+    width: 180px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
